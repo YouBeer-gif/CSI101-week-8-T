@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/stylesheet.css">
+    <script src="/script.js"></script>
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+</head>
+<body>
+    <div class=" container text-center bg-dark div1 ">
+        <p class=" text-light fs-5 pt-3">worshop #0 javasrcipt Meth & script object</p>
+
+        <div class="div2 border-1 border border-dark p-1 fs-4 fw-bold mx-auto mt-4">
+            <p class="text-start p-lg-1 ms-4">Exaple 1 uese interface insert data rponing to HTML:</p>
+            <label class="d-block">insert daata</label><input type="text" id="firsName" value="">
+            <label class="d-block">insert lesname</label><input type="text" id="lsename">
+            <label class="d-block text-danger mt-2">insert mail</label><input class="text-danger" type="email" id="gmail">
+            <!--input botton-->
+            <!--onclick เพื่อบอกให้ลิ้งไปที่ js ตอนกด-->
+            
+            <input onclick="ex1()" type="button" value="Click to display data information from user interface" class="d-block mx-auto  btn btn-outline-dark m-2 div3">
+
+            <div class="bg-dark p-2 text-light  d-block justify-content-center m-auto">
+                <label for="" id="id_output_ex1">...</label>
+            </div>
+
+            <hr class="border-1 border border-dark">
+            <!--Exaple 2-->
+            <p>Example 2: Calculate area from width & length values on user interface</p>
+            <label class="d-block">Insert width:</label> <input type="number" id="id_width">
+            <label class="d-block">Insert length:</label> <input type="number" id="id_length">
+            <input type="button" value="Click (Calculate Rectangle Area)" class="d-block mx-auto m-3 btn btn-outline-dark"
+            onclick="document.getElementById('id_output_ex2_1').innerHTML = ex2(
+                document.getElementById('id_width').value,
+                document.getElementById('id_length').value
+            )">
+            <label class="">Output Rectangle Area = </label>
+            <label for="d-flex" id="id_output_ex2_1"></label>
+            <hr>
+                        <!--Exaple 3-->
+            <div>
+                <p>Exaple 3</p>
+                <input type="button" value="number" class="btn btn-outline-dark"onclick="ex3()">
+                <p><label id="id_output_ex3_1"></label>
+                    <label id="id_output_ex3_2"></label>
+                    <label id="id_output_ex3_3"></label></p>
+                    <label id="id_output_timestanp"></label>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

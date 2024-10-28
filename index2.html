@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/stylesheetv2.css">
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <script src="/js/bootstrap.bundle.js"></script>
+    <script src="/scriptv2.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="text-center border border-2 border-drak">
+            <p class="fs-2 fw-bolder">BMI</p>
+            <label class="d-block fs-4 mt-2">weight</label><input class="bordercss p-1 ps-2" type="text" id="weight">
+            <label  class="d-block fs-4 mt-2">height</label><input class="bordercss p-1 ps-2" type="text" id="height">
+            <input type="button" value="click BMI" class="d-block mx-auto mt-3 btn btn-outline-secondary"
+            onclick="document.getElementById('BMI').innerHTML = BMI(
+            document.getElementById('weight').value,
+            document.getElementById('height').value
+            )">
+            <label class="">You BMI = </label>
+            <label for="" id="BMI"></label>
+        </div>
+    </div>
+
+        <div class="container">
+            <div class="text-center">
+                <p>อัตรา ค่านํ้า ค่าไฟ ค่าโทรศัพ ของหอหัก</p>
+                <label class="d-block fs-4 mt-2">ค่าไฟ</label>
+                <input type="text"id="electricity">
+                
+                <label class="d-block fs-4 mt-2">ค่านํ้า</label>
+                <input type="text"id="water">
+
+                <label class="d-block fs-4 mt-2">ค่าโทรศัพ</label>
+                <input type="text"id="zipphone">
+                
+                <input  class="d-block mx-auto mt-3 btn btn-outline-secondary" value="total" type="button"
+                onclick="document.getElementById('rate').innerHTML = rate(
+                document.getElementById('electricity').value,
+                document.getElementById('water').value,
+                document.getElementById('zipphone').value
+                )">
+                <label>total</label>
+                <label id="rate"></label>
+            </div>
+        </div>
+</body>
+</html>
